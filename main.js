@@ -1,25 +1,37 @@
-var nombre_alumno_array = [];
+canvas = document.getElementById ("myCanvas");
+ctx = canvas.getContext("2d");
+color = "white";
+ctx.beginPath();
+ctx.arc(300,400,30,0,6.283);
+ctx.strokeStyle = "blue";
+ctx.lineWidth = "4";
+ctx.stroke();
+ctx.closePath();
+ctx.beginPath();
+ctx.arc(340,430,30,0,6.283);
+ctx.strokeStyle = "yellow";
+ctx.lineWidth = "4";
+ctx.stroke();
+ctx.closePath();
+ctx.beginPath();
+ctx.arc(380,400,30,0,6.283);
+ctx.strokeStyle = "black";
+ctx.lineWidth = "4";
+ctx.stroke();
+ctx.closePath();
+ctx.beginPath();
+ctx.arc(420,430,30,0,6.283);
+ctx.strokeStyle = "green";
+ctx.lineWidth = "4";
+ctx.stroke();
+ctx.closePath();
+ctx.beginPath();
+ctx.arc(460,400,30,0,6.283);
+ctx.strokeStyle = "red";
+ctx.lineWidth = "4";
+ctx.stroke();
+ctx.closePath();
+setTimeout(function(){ctx.clearRect(0, 0, 600, 800); }, 15000)
 
-function enviar(){
-    var ver_alumno = [];
 
 
-    for (var j = 1; j <= 4; j++){
-        var nombre_alumno = document.getElementById("nombre_alumno_"+j).value;
-        console.log(nombre_alumno);
-        nombre_alumno_array.push(nombre_alumno);
-    }
-
-    console.log (nombre_alumno_array);
-
-    document.getElementById("ver_nombre").innerHTML = nombre_alumno;
-    document.getElementById("boton_enviar").style.display = "none";
-    document.getElementById("boton_ordenar").style.display = "inline-block";
-}
-
-function ordenar(){
-    nombre_alumno.sort();
-    console.log(nombre_alumno);
-    document.getElementById("ver_nombre").innerHTML = nombre_alumno;
-
-}

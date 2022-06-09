@@ -1,33 +1,19 @@
-#botón_enviar
+
+h1
 {
-	margin-top: 20px; 
-	margin-bottom: 20px; 
+	color: red; 
+	font-size: 40px;
 }
-#botón_ordenar
-{
-	display: none;
-	margin-top: 20px; 
-	margin-bottom: 20px; 
+.body_background {
+	background-image: url("bg1.jpg");
+	background-position:center;
+	background-size: cover;
+
 }
 
-input
-{
-	margin: 10px;
-}
-#ver_nombres_con_comas
-{
-	border: 1px solid green;
-    padding: 10px;
-	background-color: greenyellow;
-	border-radius: 10px;
-    width: 50%;
-}
-
-#ver_nombre_sin_comas
-{
-	border: 1px solid red;
-    padding: 10px;
-    background-color: lightcoral;
-	border-radius: 10px;
-    width: 50%;
+#myCanvas{
+	border-width:10px;
+	background-color: rgb(255, 255, 255);
+	border-style:ridge;
+	
 }
